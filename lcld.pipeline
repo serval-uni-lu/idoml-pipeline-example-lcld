@@ -231,18 +231,13 @@
           "name": "lcld",
           "runtime": "IDOML (Apache Airflow)",
           "pipeline_defaults": {
-            "env_vars": [
-              {
-                "env_var": "MINIO_ENDPOINT",
-                "value": "http://minio.idoml.precision.uni.lux"
-              }
-            ],
+            "env_vars": [],
+            "default_args_dict": [],
             "default_args_queue": {
               "queue": "default"
             },
             "dag_configuration": [],
-            "default_args_dict": [],
-            "runtime_image": "sntyulin/idoml-base"
+            "runtime_image": "ghcr.io/yulinhuang/idoml-python:3.8"
           },
           "pipeline_version": {
             "major": 0,
